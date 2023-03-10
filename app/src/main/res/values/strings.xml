@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">UIControl</string>
+    <string name="Agrandar">Agrandar</string>
+    <string name="Color">Color</string>
+    <string name="textoBoton">disminuir letra</string>
+    <string name="numero">numero</string>
+    <string name="Deshabilitar">Deshabilitar</string>
+    <string name="Deshabilitar2">Deshabilitar2</string>
+    <string name="normal">normal</string>
+    <string name="mediano">mediano</string>
+    <string name="grande">grande</string>
+</resources>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/texto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="accionarBoton"
+        android:text="@string/Agrandar" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Color" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="match_parent"
+        android:layout_height="63dp"
+        android:contentDescription="@string/textoBoton"
+        app:srcCompat="@android:drawable/btn_star_big_on" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:ems="10"
+        android:hint="@string/numero"
+        android:inputType="number"
+        android:autofillHints="" />
+
+    <CheckBox
+        android:id="@+id/deshabilitarBoton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:checked="false"
+        android:text="@string/Deshabilitar" />
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:text="@string/Deshabilitar2" />
+
+    <RadioGroup
+        android:id="@+id/dimensionLetra"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:checkedButton="@id/radioButtonNormal">
+
+        <RadioButton
+            android:id="@+id/radioButtonNormal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/normal" />
+
+        <RadioButton
+            android:id="@+id/radioButtonMediano"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/mediano" />
+
+        <RadioButton
+            android:id="@+id/radioButtonGrande"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/grande" />
+    </RadioGroup>
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:entries="@array/Frutas" />
+
+</LinearLayout>
